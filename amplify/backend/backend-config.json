@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "todoweb04b29464": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
