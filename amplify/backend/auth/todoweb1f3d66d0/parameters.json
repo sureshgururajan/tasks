@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "todoweb04b29464_identitypool_04b29464",
+    "identityPoolName": "todoweb1f3d66d0_identitypool_1f3d66d0",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "todowe04b29464",
-    "userPoolName": "todoweb04b29464_userpool_04b29464",
+    "resourceNameTruncated": "todowe1f3d66d0",
+    "userPoolName": "todoweb1f3d66d0_userpool_1f3d66d0",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "todowe04b29464_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "todowe1f3d66d0_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "04b29464",
-    "resourceName": "todoweb04b29464",
+    "sharedId": "1f3d66d0",
+    "resourceName": "todoweb1f3d66d0",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
