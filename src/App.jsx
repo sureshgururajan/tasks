@@ -1,13 +1,11 @@
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import Header from './Header';
 
 function App() {
     return (
-        <div className="App">
-            <header className = "App-header">
-                OpenTasks
-            </header>
-            <AmplifySignOut />
+        <div>
+            <Header />
         </div>
     );
 }
