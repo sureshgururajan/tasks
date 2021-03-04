@@ -1,6 +1,6 @@
 import { AmplifySignOut } from '@aws-amplify/ui-react';
 
-import { Toolbar, IconButton, Typography, Button, AppBar } from '@material-ui/core';
+import { Toolbar, IconButton, Typography, AppBar } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -55,7 +55,13 @@ function Header() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                <ListItem>
+                    <ListItemText primary={"Common"}></ListItemText>
+                </ListItem>
+            </List>
+            <Divider />
+            <List>
+                {['Today', 'Planned', 'All Tasks', 'Completed'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
@@ -64,12 +70,24 @@ function Header() {
             </List>
             <Divider />
             <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                <ListItem>
+                    <ListItemText primary={"Labels"}></ListItemText>
+                </ListItem>
+            </List>
+            <Divider />
+            <List>
+                {['Personal', 'Work', 'Ideas'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
+            </List>
+            <Divider />
+            <List>
+                <ListItem>
+                    <AmplifySignOut />
+                </ListItem>
             </List>
         </div>
     );
@@ -83,9 +101,6 @@ function Header() {
                 <Typography variant="h6" className={classes.title}>
                     OpenTasks
                 </Typography>
-                <Button color="inherit">
-                    <AmplifySignOut />
-                </Button>
             </Toolbar>
             <React.Fragment key={"left"}>
                 <SwipeableDrawer

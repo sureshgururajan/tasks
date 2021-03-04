@@ -5,17 +5,20 @@ Task manager web app. Manage your TODO lists easily with this web app.
 
 ## Developer Notes
 
-### Setup Prerequisites
+This project uses AWS Amplify for backend resources and hosting. Do the following to get started:
 
-#### Environment variables
-1. Google auth client ID. Supply in environment variable GOOGLE_CLIENT_ID or in constants.js as "GOOGLE_CLIENT_ID": <your google client ID>
+### Create resources 
 
-#### Install Nodejs
-Version 14 or higher.
+```
+amplify init
+amplify add auth
+amplify add hosting
+amplify push
+amplify publish
+```
 
-#### Local development
-```npm start```
+### Tear down
 
-### Deployment
-
-TODO
+```
+amplify delete
+```
