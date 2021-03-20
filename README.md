@@ -22,3 +22,7 @@ amplify publish
 ```
 amplify delete
 ```
+
+### Screenshot
+
+![Screenshot](documentation/screenshot.jpeg)
