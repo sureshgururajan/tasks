@@ -12,7 +12,7 @@ This project uses AWS Amplify for backend resources and hosting. Do the followin
 ```
 amplify init
 amplify add auth
-amplify add hosting
+amplify add hosting 
 amplify push
 amplify publish
 ```
